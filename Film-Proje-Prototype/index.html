@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Project</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container " style="margin-top:2vh;">
+
+        <div class="card row"><!-- card yazarak header kısmına çizgi ekledek card sadece card-row değil  -->
+
+            <div class="card-header ">Film Projesi</div>
+
+            <div class="card-body">
+
+                <form name="form" id="film-form">
+                    <div class="form-row">
+                        <div class="form-group col-md-6   ">
+                            <input type="text" name="title" class="form-control " placeholder="Film İsmi" id="title">
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <input type="text" name="direction" class="form-control " placeholder="Yönetmen"
+                                id="direction">
+                        </div>
+
+
+                  
+                
+                        <div class="form-group col-md-6 ">
+                            <input type="text" name="url" class="form-control " placeholder="Film Afiş Link" id="url">
+                        </div>
+
+                 
+                </div>
+
+
+
+
+                    <button type="submit" class="btn btn-danger m-2" id="add-todos">Film Ekleyin</button>
+                    <hr>
+                    
+                
+
+                </form>
+            </div>
+
+
+
+            <div class="card-body">
+                <hr>
+               <h5>Filmler</h5>
+                <hr>
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+
+                            <th scope="col">Film Afişi</th>
+                            <th scope="col">Film İsmi</th>
+                            <th scope="col">Yönetmen</th>
+                        </tr>
+                    </thead>
+                    <tbody id="films">
+                       
+                        <tr>
+
+
+                        </tr>
+                        <tr>
+
+
+                        </tr>
+                        <tr>
+
+
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+                <a href="#" id="clear-films" class="btn btn-dark "> Filmleri temizleyin</a>
+            </div>
+           
+        </div>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="film.js"></script>
+    <script src="ui.js"></script>
+    <script src="storage.js"></script>
+    <script src="project.js"></script>
+</body>
+
+</html>
